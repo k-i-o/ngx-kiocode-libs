@@ -3,5 +3,71 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-brackets": {
+      "projectType": "library",
+      "root": "projects/ngx-brackets",
+      "sourceRoot": "projects/ngx-brackets/src",
+      "prefix": "k",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-brackets/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-brackets/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-brackets/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-brackets/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "ngx-teeassembler": {
+      "projectType": "library",
+      "root": "projects/ngx-teeassembler",
+      "sourceRoot": "projects/ngx-teeassembler/src",
+      "prefix": "k",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-teeassembler/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-teeassembler/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-teeassembler/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-teeassembler/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }

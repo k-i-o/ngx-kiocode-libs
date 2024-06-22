@@ -10,14 +10,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "paths": {
-      "ngx-brackets": [
-        "./dist/ngx-brackets"
-      ],
-      "ngx-teeassembler": [
-        "./dist/ngx-teeassembler"
-      ]
-    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
