@@ -1,0 +1,16 @@
+.kiocode.brackets-viewer {    
+    --kbrackets-bg: #241610;
+    --kbrackets-secondary-bg: #321e1a;
+    --kbrackets-t-bg: #4624244f;
+    --kbrackets-c-match-bg: #1c1111;
+    --kbrackets-c-font: white;
+    --kbrackets-c-win: #50b649;
+    --kbrackets-c-loss: #e61a1a;
+    --kbrackets-c-label: #5b382c;
+    --kbrackets-c-hint: #a7a7a7;
+    --kbrackets-c-connector: #39231c;
+    --kbrackets-c-border: #885832a3;
+    --kbrackets-c-border-hover: #855b2f;
+    --kbrackets-c-opponent-hover: #855b2f28;
+
+}

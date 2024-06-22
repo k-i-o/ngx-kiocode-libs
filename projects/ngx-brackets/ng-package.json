@@ -6,5 +6,8 @@
   },
   "allowedNonPeerDependencies": [
     "brackets-viewer"
+  ],
+  "assets": [
+    "src/lib/_theme/**"
   ]
 }
