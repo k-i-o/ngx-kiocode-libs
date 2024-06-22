@@ -38,7 +38,7 @@ import { Component } from '@angular/core';
 
 ...
 
-import { TeeAssemblerComponent } from "ng-tee-assembler";
+import { TeeAssemblerComponent } from "@kiocode/ngx-teeassembler";
 
 @Component({
   selector: 'app-example',

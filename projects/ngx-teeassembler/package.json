@@ -1,6 +1,6 @@
 {
-  "name": "@k-i-o/ngx-teeassembler",
-  "version": "0.0.2",
+  "name": "@kiocode/ngx-teeassembler",
+  "version": "0.0.5",
   "publishConfig": {
     "access": "public"
   },

@@ -1,24 +1,19 @@
-# NgxBrackets
+# NgxBrackets (pre-alpha first attempt) - unstable
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name --project ngx-brackets` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-brackets`.
-> Note: Don't forget to add `--project ngx-brackets` or else it will be added to the default project in your `angular.json` file. 
+If you need to use BracketsViewer you MUST use provideBracketsViewer() method inside app.config.ts
 
-## Build
+### Example
 
-Run `ng build ngx-brackets` to build the project. The build artifacts will be stored in the `dist/` directory.
+``` js
+import { ApplicationConfig } from '@angular/core';
 
-## Publishing
+import { provideBracketsViewer } from '@kiocode/ngx-brackets';
 
-After building your library with `ng build ngx-brackets`, go to the dist folder `cd dist/ngx-brackets` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-brackets` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+export const appConfig: ApplicationConfig = {
+  providers: [provideBracketsViewer()]
+};
+```
